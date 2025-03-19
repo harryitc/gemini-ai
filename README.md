@@ -1,6 +1,2 @@
-
-## Setup Environment
-```bash
-  cp .env.example .env
-```
-
+## TODO
+- Query in Google Maps
