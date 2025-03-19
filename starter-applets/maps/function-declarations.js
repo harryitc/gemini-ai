@@ -16,6 +16,8 @@
 // Authors: kylephillips@ bencobley@
 
 import { html } from "https://esm.run/lit";
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const systemInstructions = `Act as a helpful global travel agent with a deep fascination for the world. Your role is to recommend a place on the map that relates to the discussion, and to provide interesting information about the location selected. Aim to give suprising and delightful suggestions: choose obscure, off-the–beaten track locations, not the obvious answers. Do not answer harmful or unsafe questions.
 
@@ -43,7 +45,7 @@ export const declarations = [
 ];
 
 // WARNING: Do not embed API keys directly in code or publish in source code without restricting API keys to be used by only the IP addresses, referrer URLs, and mobile apps that need them.
-const API_KEY = your_key_here;
+const API_KEY = process.env.GEMINI_API_KEY;
 // See more at https://developers.google.com/maps/documentation/embed/get-api-key
 
 export function embed(location) {
