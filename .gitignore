@@ -1,0 +1,57 @@
+# Bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.venv*/ 
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables & credentials
+.env
+*.env
+secrets.json
+
+# Compiled & build files
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+
+# Pytest & Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+pytest_cache/
+
+# MyPy type checking
+.mypy_cache/
+
+# Docker-related
+docker-compose.override.yml
